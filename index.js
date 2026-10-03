@@ -1,5 +1,6 @@
 import hive from "@hiveio/hive-js";
 
+
 function claim(username, wif) {
   return new Promise((resolve, reject) => {
     hive.api.getAccounts([username], function (err, result) {
