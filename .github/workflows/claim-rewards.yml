@@ -2,7 +2,7 @@ name: Hive Reward Claimer
 
 on:
   schedule:
-    - cron: '0 0,8,16 * * *' # Runs daily at 00:00, 08:00 and 16:00 UTC
+    - cron: '8 * * * *' # Runs daily at 8 mins past the hour
   workflow_dispatch:      # Manual trigger button in GitHub UI
 
 jobs:
